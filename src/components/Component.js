@@ -2,11 +2,14 @@ import React, { useState } from "react";
 
 const Component = (props) => {
   const [error, setError] = useState(false);
+
   props.change(setError);
 
   if (error) {
-    throw new Error("My error");
+    throw new Error("Error");
   }
-  return <>{error && <div>{""}</div>}</>;
+
+  return <></>;
 };
-export default Components;
+
+export default Component;
